@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="net.minecraft.server.v1_7_R4.ItemStack"/>
+<fullyQualifiedTypeName name="net.minecraft.server.v1_7_R4.Items"/>
+<fullyQualifiedTypeName name="com.earth2me.essentials.api.Economy"/>
+<fullyQualifiedTypeName name="com.earth2me.essentials.api.UserDoesNotExistException"/>
+<fullyQualifiedTypeName name="org.bukkit.inventory.ItemStack"/>
+<fullyQualifiedTypeName name="org.bukkit.Material"/>
+<fullyQualifiedTypeName name="net.md_5.bungee.api.ChatColor"/>
+</qualifiedTypeNameHistroy>

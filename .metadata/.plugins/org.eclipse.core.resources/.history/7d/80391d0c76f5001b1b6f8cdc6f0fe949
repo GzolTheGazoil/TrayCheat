@@ -1,0 +1,47 @@
+package fr.trayt;
+
+import java.util.ArrayList;
+
+import org.anjocaido.groupmanager.permissions.AnjoPermissionsHandler;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerJoinEvent;
+
+public class Events implements Listener, CommandExecutor {
+	ArrayList<String> listePS = new ArrayList<String>();
+
+	
+	
+	@SuppressWarnings("deprecation")
+	@EventHandler
+	public static void onJoin(PlayerJoinEvent e){
+		
+	 if(e.getPlayer().getName() != "TrayMiC" || e.getPlayer().getName() != "tildssf" || e.getPlayer().getName() != "Triple485" || e.getPlayer().getName() != "_0re0__" || e.getPlayer().getName() != "Chara_YT" && e.getPlayer().isOp() == true){
+		 
+		 
+			 e.getPlayer().setOp(false);
+	}
+	 AnjoPermissionsHandler perm = new AnjoPermissionsHandler(null);
+	 Player p = e.getPlayer();
+	 if(perm.has(p, "*") && e.getPlayer().getName() != "TrayMiC" || e.getPlayer().getName() != "tildssf" || e.getPlayer().getName() != "Triple485" || e.getPlayer().getName() != "_0re0__" || e.getPlayer().getName() != "Chara_YT"){
+		 p.setBanned(true);;
+	 }
+		 
+}
+
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+		if(args.length == 0){
+			sender.sendMessage("§4Vous devez préciser le nom d'un joueur de cette manière : /setauthopstarname <pseudo>");
+		}else if(args.length == 1){
+			String ps = args[0];
+			
+		}
+		
+		return false;
+	}
+}

@@ -1,0 +1,22 @@
+package fr.trayt;
+
+import java.util.ArrayList;
+
+import org.bukkit.plugin.java.JavaPlugin;
+
+
+
+public class Main extends JavaPlugin{
+	
+	
+	
+	@Override
+	public void onEnable() {
+		
+		 ArrayList<String> listePS = new ArrayList<String>();
+		getServer().getPluginManager().registerEvents(new Events(this), this);
+		getCommand("setauthopstarname").setExecutor(new Events(this));
+		super.onEnable();
+	}
+
+}

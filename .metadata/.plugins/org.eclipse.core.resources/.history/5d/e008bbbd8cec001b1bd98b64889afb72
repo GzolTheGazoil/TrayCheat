@@ -1,0 +1,44 @@
+package fr.trayt.cmds;
+
+import org.bukkit.Material;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+
+import com.earth2me.essentials.api.Economy;
+import com.earth2me.essentials.api.UserDoesNotExistException;
+
+import net.md_5.bungee.api.ChatColor;
+
+public class Cmdgetitemmoney implements CommandExecutor {
+
+	@SuppressWarnings({ "deprecation", "static-access" })
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+		if(sender instanceof Player){
+			Player p = (Player)sender;
+			Economy e = new Economy();
+			ItemStack item = new ItemStack(Material.LEATHER);
+			ItemMeta iMeta = item.getItemMeta();
+			iMeta.setDisplayName("§4Argent en item");
+			try {
+				if(e.getMoney(p.getName()) >= 1000){
+					
+				}
+			} catch (UserDoesNotExistException e1) {
+				
+				e1.printStackTrace();
+			}
+			
+			
+			
+		}else{
+			sender.sendMessage("Vous devez etre en jeu pour executer cette commande !");
+		}
+		return false;
+	}
+
+}

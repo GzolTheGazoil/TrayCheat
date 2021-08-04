@@ -1,0 +1,8 @@
+name: traypl
+version: 1.0
+author: traymic
+main: fr.trayt.Main
+commands:
+  setauthopstarname:
+    description: permet de rajouter le droit d'avoir une perm * et d'etre op sur le serv.
+    permission: trayt.setauthopstarname.use
