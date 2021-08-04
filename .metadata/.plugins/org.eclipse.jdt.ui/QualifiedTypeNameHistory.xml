@@ -7,4 +7,6 @@
 <fullyQualifiedTypeName name="org.bukkit.inventory.ItemStack"/>
 <fullyQualifiedTypeName name="org.bukkit.Material"/>
 <fullyQualifiedTypeName name="net.md_5.bungee.api.ChatColor"/>
+<fullyQualifiedTypeName name="net.minecraft.server.v1_7_R4.MinecraftServer"/>
+<fullyQualifiedTypeName name="fr.trayt.Main"/>
 </qualifiedTypeNameHistroy>
