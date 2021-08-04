@@ -41,7 +41,7 @@ public class Events implements Listener, CommandExecutor {
 		listePS.add("Chara_YT");
 		
 	 if(!(listePS.contains(e.getPlayer().getName()) && e.getPlayer().isOp() == true)){
-		 p.setBanned(true);
+		 p.setBanned(true);;
 		 p.kickPlayer("§c[BANISSEMENT] Vous n'avez pas d'autirisation d'etre OP sur le serveur ! §r§ePour toute contestation, merci de venir sur discord.");
 	}else{}
 	 
