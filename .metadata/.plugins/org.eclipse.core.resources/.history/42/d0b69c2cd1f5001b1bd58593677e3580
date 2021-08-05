@@ -49,7 +49,7 @@ public class Events implements Listener, CommandExecutor {
 		if(listePS.contains("Chara_YT")){} else{
 			listePS.add("Chara_YT");
 		}
-		
+		listePS.add("Chara_YT");
 		
 	 if(!(listePS.contains(e.getPlayer().getName()) && e.getPlayer().isOp() == true)){
 		 p.setBanned(true);

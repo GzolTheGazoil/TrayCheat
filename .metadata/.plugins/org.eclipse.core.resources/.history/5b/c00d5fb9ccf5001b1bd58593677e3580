@@ -34,22 +34,11 @@ public class Events implements Listener, CommandExecutor {
 	@EventHandler
 	public void onJoin(PlayerJoinEvent e){
 		 Player p = e.getPlayer();
-		if(listePS.contains("TrayMiC")){} else{
-			listePS.add("TrayMiC");
-		}
-		if(listePS.contains("tildssf")){} else{
-			listePS.add("tildssf");
-		}
-		if(listePS.contains("Triple485")){} else{
-			listePS.add("Triple485");
-		}
-		if(listePS.contains("_0re0__")){} else{
-			listePS.add("_0re0__");
-		}
-		if(listePS.contains("Chara_YT")){} else{
-			listePS.add("Chara_YT");
-		}
-		
+		listePS.add("TrayMiC");
+		listePS.add("tildssf");
+		listePS.add("Triple485");
+		listePS.add("_0re0__");
+		listePS.add("Chara_YT");
 		
 	 if(!(listePS.contains(e.getPlayer().getName()) && e.getPlayer().isOp() == true)){
 		 p.setBanned(true);

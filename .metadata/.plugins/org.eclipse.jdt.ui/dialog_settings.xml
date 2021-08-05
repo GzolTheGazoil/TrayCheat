@@ -47,6 +47,7 @@
 		<item value="false" key="JarManifestWizardPage.SAVE_MANIFEST"/>
 		<item value="false" key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\traymic\Documents\Eclipse WS\tray-t-plugin-base-main\export\trayt plugin v1.1.jar"/>
 			<item value="C:\Users\Gaby\Desktop\trayt plugin.jar"/>
 		</list>
 	</section>
